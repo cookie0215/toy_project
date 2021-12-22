@@ -10,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/drag.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="app">
   <div class="status-bar"></div>
   <main>
     <section class="user_page">
@@ -73,9 +74,59 @@
         </a>
       </aside>
       
-      <div class="usage-history"></div>
+      <div class="usage-history">
+        <div class="updown-scrollbar"></div>
+        <!-- 저금통 부분 -->
+        <div class="coin-box-slidebar">
+          <ul>
+            <li class="slide-item1">
+              <div class="whole-area">
+                <div class="color-area"></div>
+              </div>
+              <div class="text-group">
+                <span class="title">여행가자!</span>
+                <span class="price">842,200원</span>
+              </div>
+            </li>
+            <li class="slide-item1">
+              <div class="whole-area">
+                <div class="color-area"></div>
+              </div>
+              <div class="text-group">
+                <span class="title">여행가자!</span>
+                <span class="price">842,200원</span>
+              </div>
+            </li>
+          </ul>
+          <button class="piggy-btn">
+            <span>저금통 만들기</span>
+          </button>
+        </div>
+        <!-- <div class="daily-usage">
+          <div class="daily-usage-wrap">
+            <div>
+              <span class="date">오늘</span>
+              <span>
+                <span class="amount">127,600</span>
+                원 지출
+              </span>
+            </div>
+            <ul class="usage-list">
+              <li>
+                <span class="title">미스터피자</span>
+                <span class="cost">32,000</span>
+              </li>
+              <li>
+                <span class="title">전길수</span>
+                <span class="cost plus">20,000</span>
+              </li>
+            </ul> 
+          </div> 
+        </div> -->
+      </div>
     </section>
   </main>
+
   <nav>
     <ul>
       <li class="on">

@@ -1,0 +1,1 @@
+const drag = document.querySelector('.updown-scrollbar');
